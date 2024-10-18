@@ -1,11 +1,20 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href= "{% static 'estilos.css' %}">
     <title>kaylee </title>
 </head>
 <body>
-    <h1>holis</h1>
+    <h1>holis soy kaylee</h1>
+    <h1>Luevano Molina</h1> 
+    <HR>
+       {% for  i in objeto %}
+       <li> {{i.nombre}}</li>
+       {% endfor %}
+    </HR>
+    <script src="{% static "scripts.js" %}}"></script>
 </body>
 </html>
